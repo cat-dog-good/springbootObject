@@ -13,6 +13,13 @@ POJO的内在含义是指：一个常规的、不受任何框架、平台的约�
 */
 
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 //用户表
 public class emp {
     private Integer id;
@@ -22,77 +29,78 @@ public class emp {
     private Short age;
     private String idCard;
 
-    public emp() {
-    }
+//    public emp() {
+//    }
 
-    @Override
-    public String toString() {
-        return "emp{" +
-                "id=" + id +
-                ", workNo='" + workNo + '\'' +
-                ", name='" + name + '\'' +
-                ", gender='" + gender + '\'' +
-                ", age=" + age +
-                ", idCard='" + idCard + '\'' +
-                '}';
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public emp(Integer id, String workNo, String name, String gender, Short age, String idCard) {
-        this.id = id;
-        this.workNo = workNo;
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-        this.idCard = idCard;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getWorkNo() {
-        return workNo;
-    }
-
-    public void setWorkNo(String workNo) {
-        this.workNo = workNo;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public Short getAge() {
-        return age;
-    }
-
-    public void setAge(Short age) {
-        this.age = age;
-    }
-
-    public String getIdCard() {
-        return idCard;
-    }
-
-    public void setIdCard(String idCard) {
-        this.idCard = idCard;
-    }
+//    @Override
+//    public String toString() {
+//        return "emp{" +
+//                "id=" + id +
+//                ", workNo='" + workNo + '\'' +
+//                ", name='" + name + '\'' +
+//                ", gender='" + gender + '\'' +
+//                ", age=" + age +
+//                ", idCard='" + idCard + '\'' +
+//                '}';
+//    }
+//
+//
+//    public Integer getId() {
+//        return id;
+//    }
+//
+//    public emp(Integer id, String workNo, String name, String gender, Short age, String idCard) {
+//        this.id = id;
+//        this.workNo = workNo;
+//        this.name = name;
+//        this.gender = gender;
+//        this.age = age;
+//        this.idCard = idCard;
+//    }
+//
+//    public void setId(Integer id) {
+//        this.id = id;
+//    }
+//
+//    public String getWorkNo() {
+//        return workNo;
+//    }
+//
+//    public void setWorkNo(String workNo) {
+//        this.workNo = workNo;
+//    }
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public String getGender() {
+//        return gender;
+//    }
+//
+//    public void setGender(String gender) {
+//        this.gender = gender;
+//    }
+//
+//    public Short getAge() {
+//        return age;
+//    }
+//
+//    public void setAge(Short age) {
+//        this.age = age;
+//    }
+//
+//    public String getIdCard() {
+//        return idCard;
+//    }
+//
+//    public void setIdCard(String idCard) {
+//        this.idCard = idCard;
+//    }
 }
 
 
